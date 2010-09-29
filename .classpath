@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="views/**" kind="src" path="app"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/CRUD"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Play"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Play-Search"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Play-Search-1.2"/>
 	<classpathentry kind="output" path="eclipse/classes"/>
 </classpath>
