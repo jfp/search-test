@@ -3,11 +3,13 @@ package controllers;
 import java.util.List;
 
 import models.Book;
+
 import play.db.jpa.JPA;
 import play.jobs.Job;
 import play.jobs.OnApplicationStart;
 import play.modules.search.Search;
-import play.mvc.Controller;
+import play.modules.search.Query;
+import play.mvc.*;
 
 public class Application extends Controller {
 
@@ -18,7 +20,7 @@ public class Application extends Controller {
            books = Book.findAll();
         else {
             if (field==null) field ="title";
-            play.modules.search.Search.Query qr = Search.search(field+":"+query+"*", Book.class);
+            Query qr = Search.search(field+":"+query+"*", Book.class);
             books = qr.page(0, 10).reverse().fetch();
         }
         render(books,field,query);
