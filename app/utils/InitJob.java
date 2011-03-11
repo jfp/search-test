@@ -11,7 +11,7 @@ public class InitJob extends Job {
 	public void doJob() {
 		for (int i = 0; i < 200; i++) {
 			Document d = new Document("hello " + i);
-			d.save();
+			d.create();
 		}
 	}
 }

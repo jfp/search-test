@@ -7,6 +7,7 @@ import play.jobs.Job;
 import play.jobs.OnApplicationStart;
 import play.modules.search.Field;
 import play.modules.search.Indexed;
+import javax.persistence.Lob;
 
 @Entity
 @Indexed
@@ -25,6 +26,7 @@ public class Book extends Model {
     @Field
     public String author;
     @Field
+    @Lob
     public String content;
     @Field
     public int shelfNumber;

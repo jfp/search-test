@@ -1,6 +1,7 @@
 <form action="@{Application.index()}" method="POST">
         <label for="field-selector">Filter Field:</label>
         <select name="field" id="field-selector">
+                <option #{if field=="_docID"}selected#{/if}>_docID</option>
                 <option #{if field=="title"}selected#{/if}>title</option>
                 <option #{if field=="author"}selected#{/if}>author</option>
                 <option #{if field=="content"}selected#{/if}>content</option>

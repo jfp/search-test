@@ -36,7 +36,7 @@ public class Application extends Controller {
                     " we are bounded by the Aurora Borealis, on the east we " +
                     "are bounded by therising sun, on the south we are bounded" +
                     " by the procession of theEquinoxes, and on the west " +
-                    "by the Day of Judgment.",1).save();
+                    "by the Day of Judgment.",1).create();
 
             new Book ("Neverwhere","Neil Gaiman",
                     "She had been running for days now, a harum-scarum tumbling " +
@@ -45,12 +45,12 @@ public class Application extends Controller {
                     "each successive door was proving harder to open. After " +
                     "four days of flight, she had found a hiding place, " +
                     "a tiny stone burrow, under the world, where she would be " +
-                    "safe, or so she prayed, and at last she slept.",1).save();
+                    "safe, or so she prayed, and at last she slept.",1).create();
             new Book ("The Color Of Magic", "Terry Pratchett" ,
                     "IN A DISTANT AND SECONDHAND SET OF DIMENSIONS, in an astral " +
                     "plane that was never meant to fly, the curling star-mists " +
                     "waver and part… See… Great A’Tuin the turtle comes, " +
-                    "swimming slowly through the interstellar gulf",7).save();
+                    "swimming slowly through the interstellar gulf",7).create();
 
             new Book ("Bad Monkeys", "Matt Ruff " ,
                     "Jane Charlotte has been arrested for murder. She tells " +
@@ -62,7 +62,7 @@ public class Application extends Controller {
                     "where a doctor attempts to determine whether she is " +
                     "lying, crazy—or playing a different game altogether. " +
                     "What follows is one of the most clever and" +
-                    "gripping novels you'll ever read",3).save();
+                    "gripping novels you'll ever read",3).create();
         }
     }
 }
